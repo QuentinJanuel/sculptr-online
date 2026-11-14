@@ -1,0 +1,46 @@
+{
+  "name": "@sculptr/online",
+  "version": "1.7.1",
+  "displayName": "Online",
+  "description": "Play alongside everyone else in the same game: see them move, wearing the character they picked, and chat.",
+  "keywords": [
+    "fangame",
+    "gamemaker",
+    "i-wanna",
+    "mod",
+    "multiplayer",
+    "sculptr"
+  ],
+  "homepage": "https://github.com/QuentinJanuel/sculptr-online#readme",
+  "bugs": "https://github.com/QuentinJanuel/sculptr-online/issues",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuentinJanuel/sculptr-online.git"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "concurrently -k \"vite build --watch --mode development\" \"vite preview\"",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "vite build"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.4",
+    "concurrently": "^10.0.5",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.0"
+  },
+  "dependencies": {
+    "@sculptr/detect": "^2.4.0",
+    "@sculptr/sdk": "^2.17.0",
+    "@sculptr/text": "^1.3.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
