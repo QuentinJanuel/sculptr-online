@@ -2,6 +2,7 @@
   "name": "@sculptr/online",
   "version": "1.7.1",
   "displayName": "Online",
+  "icon": "https://cdn.jsdelivr.net/npm/@sculptr/online/icon.svg",
   "description": "Play alongside everyone else in the same game: see them move, wearing the character they picked, and chat.",
   "keywords": [
     "fangame",
@@ -38,7 +39,8 @@
     "@sculptr/text": "^1.3.0"
   },
   "files": [
-    "dist"
+    "dist",
+    "icon.svg"
   ],
   "publishConfig": {
     "access": "public"
